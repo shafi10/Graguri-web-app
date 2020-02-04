@@ -1,0 +1,29 @@
+<div class="panel panel-default" ng-init="getInfo()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-list"> </span> Places List</p>
+	</div>
+	<div class="panel-body">
+    <input type="text" ng-model="search" placeholder="Search" />
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Address</th>
+			  <th>Location</th>
+			  <th>opened</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="contact in contacts | filter:search">
+			  <td>{{ contact.address }}</td>
+			  <td>{{ contact.location }}</td>
+			  <td>{{ contact.opened }}</td>
+			  <td>
+			    <a href="#/list/{{contact._id}}/places" class="btn btn-info"> Show  </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="panel panel-default" ng-init="getone()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-list"> </span> Places List</p>
+	</div>
+	<div class="panel-body">
+		<input type="text" ng-model="budget" placeholder="budget" />
+		
+		<table class="table table-striped">
+			<thead>
+			<tr>
+				<th>Id</th>
+			  <th>Places for visit</th>
+			  <th>Budget Need</th>
+			  <th>Travell</th>
+			  <th>Best way to Start</th>
+        <th>Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="x in one | filter:budget | orderBy:'budget' ">
+				<td>{{x._id}}</td>
+			  <td>{{ x.places }}</td>
+			  <td>{{ x.budget  }}</td>
+			  <td>{{ x.travell }}</td>
+			  <td>{{ x.start }}</td>
+        <td>{{ x.description }}</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+</div>

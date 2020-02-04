@@ -1,0 +1,39 @@
+.header {
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    background-color: #990099;
+    color:white
+}
+
+.footer {
+    background-color: #BDBDBD;
+    text-align: center;
+}
+
+.leftMenu {
+    height: 500px;
+    background-color: #660066;
+    width: 150px;
+}
+
+.mainContent {
+    height: 500px;
+    background-color: #E6E6E6;
+    width: 1100px;
+}
+
+a{
+    display:block;
+    padding:20px;
+    color:#00e600;
+    font-size: 20px;
+
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}

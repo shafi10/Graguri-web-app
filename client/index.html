@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web APP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+	<table style="font-family:Arial">
+	     <tr>
+	       <td colspan="2" class="header">
+	        <h1>Beautiful Bangladesh</h1>
+	       </td>
+	     </tr>
+	     <tr>
+	       <td class="leftMenu">
+	           <a href="#/">Home</a>
+	           <a href="#/places">Search</a>
+	           <a href="#/login">User Login</a>
+	           <a href="#/regis">Registration</a>
+	           <a href="#/package">Packages</a>
+	           <a href="#/event">New Event</a>
+						 <a href="#/signIn">Manage System</a>
+	       </td>
+	       <td class="mainContent">
+	            <ng-view>
+
+	            </ng-view>
+	       </td>
+	     </tr>
+	    <tr>
+	      <td colspan="2" class="footer">
+	      <p>© shafi</p>
+	      </td>
+	    </tr>
+	   </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.min.css">
+<script src="server.js"></script>
+<script src="controllers/controllers.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+<div>
+<div class="panel panel-default" ng-init="getInfo()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-list"> </span> Places List</p>
+	</div>
+	<div class="panel-body">
+    <input type="text" ng-model="search" placeholder="Search" />
+		<table class="table table-striped" id="datatable">
+			<thead>
+			<tr>
+			  <th>Address</th>
+			  <th>Location</th>
+			  <th>opened</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="contact in contacts | filter:search">
+			  <td>{{ contact.address }}</td>
+			  <td>{{ contact.location }}</td>
+			  <td>{{ contact.opened }}</td>
+			</tr>
+			</tbody>
+		</table>
+    </div>
+</div>
+</div>
+<div class="from-group" style="margin-left:10px;width:100px">
+	<textarea rows="4" cols="100" placeholder="Write here" ng-model="comment.text">
+
+	 </textarea>
+	 <button type="button" ng-click="addcomment()" class="btn btn-md btn-primary btn-block">Comment</button>
+
+
+	 <p ng-repeat="x in com">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				{{x.text}}
+			</p
+
+</div>

@@ -1,0 +1,41 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Add New Places</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addInfo()">
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" class="form-control" id="address" ng-model="contact.address">
+    </div>
+    <div class="form-group">
+      <label for="dept">Location</label>
+      <input type="text" class="form-control" id="location" ng-model="contact.location">
+    </div>
+    <div class="form-group">
+      <label for="area">Open</label>
+      <input type="text" class="form-control" id="opened" ng-model="contact.opened">
+    </div>
+    <div class="form-group">
+      <label for="contact">Distance</label>
+      <input type="text" class="form-control" id="dfmc" ng-model="contact.dfmc">
+      <div class="form-group">
+      <label for="status">Description</label>
+      <input type="text" class="form-control" id="description" ng-model="contact.description">
+      <div class="form-group">
+      <label for="salary">Hours</label>
+      <input type="text" class="form-control" id="hours" ng-model="contact.hours">
+    </div>
+		<div class="form-group">
+			<label for="area">Phone</label>
+			<input type="text" class="form-control" id="phone" ng-model="contact.phone">
+		</div>
+		<div class="form-group">
+			<label for="area">Email</label>
+			<input type="text" class="form-control" id="email" ng-model="contact.email">
+		</div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Save</button>
+    <a href="#/info" class="btn btn-default"> Cancel</a>
+</form>
+    <div>
+<div>

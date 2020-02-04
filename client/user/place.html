@@ -1,0 +1,21 @@
+<div class="panel panel-default" ng-init="showInfo(contact)">
+	<div class="panel-heading">
+	  <p class="panel-title"> Places Details Information</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Address: {{ contact.address }}</label>
+		 <label class="form-control">Location: {{ contact.location }}</label>
+		 <label class="form-control">Open: {{ contact.opened }}</label>
+		 <label class="form-control">Distance: {{ contact.dfmc }}</label>
+		 <label class="form-control">Description: {{ contact.description }}</label>
+		 <label class="form-control">Hours: {{ contact.hours }}</label>
+		 <label class="form-control">Phone: {{ contact.phone }}</label>
+		 <label class="form-control">Email: {{ contact.email }}</label>
+		 <label class="form-control">ID: {{ contact._id }}</label>
+		<a href="#/list" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>
+    <div>
+<div>
